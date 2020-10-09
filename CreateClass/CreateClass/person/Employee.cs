@@ -2,7 +2,7 @@ using System;
 
 namespace CreateClass.person
 {
-    public class Employee : Person
+    public class Employee : Person, ICloneable
     {
         private double _salary;
         private string _profession;
@@ -39,6 +39,13 @@ namespace CreateClass.person
                    $"salary: {Salary}\n" +
                    $"profession: {Profession}\n" +
                    "room: " + (_room != null ? $"{Room}" : "No room provided") + "\n";
+        }
+
+        public object Clone()
+        {
+            Employee newEmployee = (Employee) MemberwiseClone();
+            newEmployee.Room = new Room(Room.Number);
+            return newEmployee;
         }
     }
 }
