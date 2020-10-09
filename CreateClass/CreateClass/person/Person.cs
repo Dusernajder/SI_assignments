@@ -40,16 +40,16 @@ namespace CreateClass.person
 
         public Person(string name, DateTime birthDay, Genders gender)
         {
-            Name = name;
-            BirthDay = birthDay;
-            Gender = gender;
+            _name = name;
+            _birthDay = birthDay;
+            _gender = gender;
         }
 
         public override string ToString()
         {
             return $"name: {Name}\n" +
                    $"birth day: {BirthDay}\n" +
-                   $"gender: {Gender}";
+                   $"gender: {Gender}\n";
         }
     }
 }
