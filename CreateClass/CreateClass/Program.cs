@@ -7,7 +7,8 @@ namespace CreateClass
     {
         public static void Main(string[] args)
         {
-            Person person = new Person("Jack", new DateTime(1980, 01, 01), Person.Genders.Male);
+            Employee person = new Employee("Géza", DateTime.Now, Person.Genders.Male, 1000, "léhűtő");
+            person.Room = new Room(111);
             Console.WriteLine(person);
         }
     }
