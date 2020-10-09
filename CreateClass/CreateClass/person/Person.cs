@@ -4,9 +4,33 @@ namespace CreateClass.person
 {
     public class Person
     {
-        private string Name { get; }
-        private DateTime BirthDay { get; }
-        private Genders Gender { get; }
+        private string _name;
+        private DateTime _birthDay;
+        private Genders _gender;
+
+        public string Name
+        {
+            get => _name;
+            set => _name = value;
+        }
+
+        public DateTime BirthDay
+        {
+            get => _birthDay;
+            set
+            {
+                if (value.Year > 1900)
+                {
+                    _birthDay = value;
+                }
+            }
+        }
+
+        public Genders Gender
+        {
+            get => _gender;
+            set => _gender = value;
+        }
 
         public enum Genders
         {
