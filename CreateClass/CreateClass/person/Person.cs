@@ -4,8 +4,8 @@ namespace CreateClass.person
 {
     public class Person
     {
-        public string Name { get; }
-        public DateTime BirthDay { get; }
+        private string Name { get; }
+        private DateTime BirthDay { get; }
         private Genders Gender { get; }
 
         public enum Genders
