@@ -1,4 +1,5 @@
 ﻿using System;
+using CreateClass.person;
 
 namespace CreateClass
 {
@@ -6,7 +7,8 @@ namespace CreateClass
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            Person person = new Person("Jack", new DateTime(1980, 01, 01), Person.Genders.Male);
+            Console.WriteLine(person);
         }
     }
 }
