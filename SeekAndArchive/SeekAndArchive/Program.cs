@@ -36,8 +36,30 @@ namespace SeekAndArchive
         }
 
 
-        static void Compress(FileInfo fileInfo)
+        static void Compress(FileInfo fileToCompress)
         {
+            using (FileStream originalFileStream = new FileStream(fileToCompress.FullName, FileMode.Open, FileAccess.Read))
+            {
+                if (IsCompressedFileNotExists(fileToCompress))
+                {
+                    string rawFileName = Path.GetFileNameWithoutExtension(fileToCompress.FullName);
+                    string outputFile = fileToCompress.Directory + "/" + rawFileName + ".gz"; // '\' for Windows
+                    using (FileStream compressedFileStream = new FileStream(outputFile, FileMode.Create, FileAccess.Write))
+                    {
+                        using (GZipStream compressionStream = new GZipStream(compressedFileStream, CompressionMode.Compress))
+                        {
+                            Console.WriteLine($"Compressed file created: {outputFile}");
+                            originalFileStream.CopyTo(compressionStream);
+                        }
+                    }
+                }
+            }
+        }
+
+        private static bool IsCompressedFileNotExists(FileInfo fileToCompress)
+        {
+            return (File.GetAttributes(fileToCompress.FullName) &
+                    FileAttributes.Hidden) != FileAttributes.Hidden & fileToCompress.Extension != ".gz";
         }
     }
 }
