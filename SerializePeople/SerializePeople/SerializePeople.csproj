@@ -9,8 +9,4 @@
       <Folder Include="test" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Compile Remove="src\Person.cs" />
-    </ItemGroup>
-
 </Project>
