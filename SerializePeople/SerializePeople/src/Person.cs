@@ -34,6 +34,15 @@ namespace SerializePeople
             }
         }
 
+        public static Person Deserialize(string input)
+        {
+            using (Stream stream = File.Open(input, FileMode.Open))
+            {
+                BinaryFormatter binaryFormatter = new BinaryFormatter();
+                return (Person) binaryFormatter.Deserialize(stream);
+            }
+        }
+
         public void GetObjectData(SerializationInfo info, StreamingContext context)
         {
             info.AddValue("Name", Name);
