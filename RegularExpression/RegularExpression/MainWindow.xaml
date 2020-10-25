@@ -7,5 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="280" Width="300">
     <Grid>
+        <StackPanel Margin="30" HorizontalAlignment="Center">
+            <StackPanel>
+                <Label Content="Name" x:Name="LabelName" />
+                <TextBox x:Name="InputName" Width="200" />
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Phone" x:Name="LabelPhone" />
+                <TextBox x:Name="InputPhone" Width="200" />
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Email" x:Name="LabelEmail" />
+                <TextBox x:Name="InputEmail" Width="200" />
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Right" Margin="0 20 20 0">
+                <Button Content="Save" Click="SaveButton_OnClick" Width="40" />
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
