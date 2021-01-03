@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyDemo", "AssemblyDem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyAttrDemo", "AssemblyAttrDemo\AssemblyAttrDemo.csproj", "{3345B425-6BC3-4249-A453-085A4E5CA391}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyTypeDemo", "AssemblyTypeDemo\AssemblyTypeDemo.csproj", "{6968CDA7-1179-463B-B1DE-0B14BDD8F1C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{3345B425-6BC3-4249-A453-085A4E5CA391}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3345B425-6BC3-4249-A453-085A4E5CA391}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3345B425-6BC3-4249-A453-085A4E5CA391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6968CDA7-1179-463B-B1DE-0B14BDD8F1C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6968CDA7-1179-463B-B1DE-0B14BDD8F1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6968CDA7-1179-463B-B1DE-0B14BDD8F1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6968CDA7-1179-463B-B1DE-0B14BDD8F1C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
