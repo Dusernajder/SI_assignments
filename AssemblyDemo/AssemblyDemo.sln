@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyTypeDemo", "Assembl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicCodeDemo", "DynamicCodeDemo\DynamicCodeDemo.csproj", "{5394B64B-6C0B-43F0-B25B-F3C44F7A1BC7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicAssemblyDemo", "DynamicAssemblyDemo\DynamicAssemblyDemo.csproj", "{1EFFB71C-D025-44DF-92AF-CFEE89B58B30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{5394B64B-6C0B-43F0-B25B-F3C44F7A1BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5394B64B-6C0B-43F0-B25B-F3C44F7A1BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5394B64B-6C0B-43F0-B25B-F3C44F7A1BC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EFFB71C-D025-44DF-92AF-CFEE89B58B30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EFFB71C-D025-44DF-92AF-CFEE89B58B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EFFB71C-D025-44DF-92AF-CFEE89B58B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EFFB71C-D025-44DF-92AF-CFEE89B58B30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
